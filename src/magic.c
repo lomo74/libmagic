@@ -185,7 +185,7 @@ out:
 			if (asprintf(&tmppath,
 			    "%s/share/misc/magic.mgc", dllpath) >= 0)
 				APPENDPATH();
-			else if (asprintf(&tmppath,
+			if (asprintf(&tmppath,
 			    "%s/magic.mgc", dllpath) >= 0)
 				APPENDPATH();
 		}
